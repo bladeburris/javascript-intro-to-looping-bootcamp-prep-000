@@ -8,20 +8,21 @@ function forLoop(array) {
     return array
   }
   
-  function whileLoop(num) {
-    while (num > 0) {
+function whileLoop(num) {
+  while (num > 0) {
       console.log(num)
       num = (num - 1)
     }
     return "done"
   }
   
-  function maybeTrue() {
+function maybeTrue() {
   return Math.random() >= 0.5
 }
   
-  function doWhileLoop(array) {
-    do {
-      array.pop()
-    } while (array.length > 0 && maybeTrue());
+function doWhileLoop(array) {
+  do {
+    array.pop()
+    
+  } while (array.length > 0 && maybeTrue());
   }
